@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <SeekBar android:id="@+id/seek_x"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:max="6" android:progress="3"
+             android:layout_marginTop="30.0dip"
+             android:secondaryProgress="6"/>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:id="@+id/seek_x_tip"
+                  android:paddingBottom="16.0dip"
+                  android:layout_width="40.0dip"
+                  android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/sensor_x_text"
+                  android:paddingLeft="10.0dip"
+                  android:paddingBottom="16.0dip"
+                  android:layout_gravity="right"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <SeekBar android:id="@+id/seek_y"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:max="6" android:progress="3"
+             android:secondaryProgress="6"/>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:id="@+id/seek_y_tip"
+                  android:paddingBottom="16.0dip"
+                  android:layout_width="40.0dip"
+                  android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/sensor_y_text"
+                  android:paddingLeft="10.0dip"
+                  android:paddingBottom="16.0dip"
+                  android:layout_gravity="right"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <SeekBar android:id="@+id/seek_z"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:max="6" android:progress="3"
+             android:secondaryProgress="6"/>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:id="@+id/seek_z_tip"
+                  android:paddingBottom="16.0dip"
+                  android:layout_width="40.0dip"
+                  android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/sensor_z_text"
+                  android:paddingLeft="10.0dip"
+                  android:paddingBottom="16.0dip"
+                  android:layout_gravity="right"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:id="@+id/progress"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tracking"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+        <Button android:id="@+id/button_save"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="5.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingBottom="5.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:text="@string/button_save"/>
+        <Button android:id="@+id/button_cancel"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="5.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingBottom="5.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:text="@string/button_cancel"/>
+        <Button android:id="@+id/button_reset"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="5.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingBottom="5.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:text="@string/button_reset"/>
+    </LinearLayout>
+</LinearLayout>

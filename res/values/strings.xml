@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">G-sensor bena bma220</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_reset">Reset</string>
+    <string name="save_config_success">save config success!</string>
+    <string name="save_config_failed">save config failed!</string>
+    <string name="save_dialog_title">save acceleration sensor value</string>
+    <string name="save_dialog_message">save config value?</string>
+    <string name="notify_message_cancel">Cancel</string>
+</resources>
