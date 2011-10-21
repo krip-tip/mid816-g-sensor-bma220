@@ -51,7 +51,7 @@ public class AutoRun extends BroadcastReceiver {
         if (check_g_sensor_exists()) {
             Log.d("AdjustSensorAutoRun", "bma220 exists!");
             this.mFilePath = getCurrentDirPath(paramContext);
-            sharedpreferences = paramContext.getSharedPreferences("offset_pref", Context.MODE_PRIVATE);
+            sharedpreferences = paramContext.getSharedPreferences("offset_pref", 0);
             this.m_progress = sharedpreferences.getInt("offset_x",0);
             if (write_file_value("/sys/devices/platform/s3c2440-i2c.2/i2c-2/2-000a/", "offset_x", this.m_progress)) {
                 Log.i("AdjustSensor", " write offset_x = " + this.m_progress + " success!\n");

@@ -40,7 +40,7 @@ public class AdjustSensor extends Activity
     public int mAccelerometer;
     int mAutoRunValue = 0;
     Context mContex;
-    String mFilePath = "";
+    //String mFilePath = "";
     TextView mProgressText;
     SeekBar mSeekBar_x;
     SeekBar mSeekBar_y;
@@ -124,10 +124,10 @@ public class AdjustSensor extends Activity
 
     }
 
-    private String getCurrentDirPath() {
+  /*  private String getCurrentDirPath() {
         return getFilesDir().getParent();
     }
-
+*/
     public boolean check_gsensor_exists() {
         File localFile = new File("/sys/devices/platform/s3c2440-i2c.2/i2c-2/2-000a/", "offset_x");
         return localFile.exists();
@@ -144,7 +144,7 @@ public class AdjustSensor extends Activity
             this.mAccelerometer = Settings.System.getInt(getContentResolver(), "accelerometer_rotation", 0);
             Log.i("AdjustSensor", String.valueOf("set mAccelerometer = " + this.mAccelerometer));
         }
-        this.mFilePath = getCurrentDirPath();
+        //this.mFilePath = getCurrentDirPath();
         Bundle localBundle = getIntent().getExtras();
         if (localBundle != null) {
             this.mAutoRunValue = localBundle.getInt("AutoRunTT");
@@ -242,9 +242,9 @@ public class AdjustSensor extends Activity
                 case Sensor.TYPE_ACCELEROMETER:
                     if(mAccelerometerSensor == null) mAccelerometerSensor = sensor;
                     break;
-                case Sensor.TYPE_GRAVITY:
+                /*case Sensor.TYPE_GRAVITY:
                     if(mMagneticFieldSensor == null) mMagneticFieldSensor = sensor;
-                    break;
+                    break;*/
                 default:
                     break;
                 }
